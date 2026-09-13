@@ -1,0 +1,157 @@
+/* Overall Page Styling */
+body {
+    background-color: black;
+    color: white;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styling */
+#header {
+    background-color: #9faecb;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#header h1 {
+    margin: 0;
+    color: black;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+}
+#header h1 img {
+    border-radius: 50%; /* Makes header image round */
+}
+#header div a {
+    color: #ff4d6d;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* Center content layout */
+#about, #skills, #projects, #contact {
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+h2 {
+    border-bottom: 1px solid #333;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+/* Hide horizontal rules to match the dark theme */
+hr { 
+    display: none; 
+}
+
+/* About Section */
+#about p {
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.6;
+}
+#about > img {
+    display: block;
+    margin: 0 auto 20px auto;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+#about h3 {
+    margin-top: 30px;
+}
+#about ul {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* Skills Section (Pill shape buttons) */
+#skills ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+#skills li {
+    background-color: #4a5568;
+    color: #9bb1ff;
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* Projects Section (Pink rounded boxes) */
+.project-box {
+    background-color: #d8a7b1;
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    color: black;
+}
+.project-box h3 {
+    color: #4a154b;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.project-box p {
+    margin: 0;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* Contact Section */
+#contact p {
+    font-weight: bold;
+    font-size: 14px;
+}
+#contact a {
+    color: #3b82f6;
+    text-decoration: none;
+}
+#contact form {
+    background-color: #333;
+    max-width: 400px;
+    padding: 25px;
+    border-radius: 15px;
+    margin-top: 20px;
+    color: #ff4d6d;
+    font-weight: bold;
+}
+#contact input[type="text"], #contact textarea {
+    width: 100%;
+    background-color: #8bbec9;
+    border: none;
+    border-radius: 20px;
+    padding: 12px;
+    margin-top: 8px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+#contact input[type="submit"] {
+    background-color: #8bbec9;
+    color: #333;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Footer */
+#footer {
+    text-align: center;
+    padding: 20px;
+    color: #555;
+}
